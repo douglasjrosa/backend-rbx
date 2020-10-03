@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "name": "Empresas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "rua": {
+      "type": "string"
+    },
+    "nro": {
+      "type": "integer"
+    },
+    "bairro": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "uf": {
+      "type": "string"
+    },
+    "cep": {
+      "type": "biginteger"
+    },
+    "complemento": {
+      "type": "string"
+    },
+    "cnpj": {
+      "type": "biginteger"
+    },
+    "ie": {
+      "type": "biginteger"
+    },
+    "cnae": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    },
+    "telefone": {
+      "type": "biginteger"
+    },
+    "negocios": {
+      "collection": "deals",
+      "via": "empresa"
+    },
+    "pessoas": {
+      "via": "empresa",
+      "collection": "people"
+    }
+  }
+}

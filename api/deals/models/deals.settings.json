@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deals",
+  "info": {
+    "name": "Negócios"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "data_entrega": {
+      "type": "date"
+    },
+    "valor": {
+      "type": "decimal"
+    },
+    "Cod": {
+      "type": "uid",
+      "targetField": "nome"
+    },
+    "probabilidade": {
+      "type": "enumeration",
+      "enum": [
+        "Lead",
+        "Curioso",
+        "Interessado",
+        "Necessitado"
+      ]
+    },
+    "empresa": {
+      "via": "negocios",
+      "model": "company"
+    }
+  }
+}

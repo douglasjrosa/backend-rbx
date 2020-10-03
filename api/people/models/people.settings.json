@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "Pessoas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "telefone": {
+      "type": "biginteger"
+    },
+    "celular": {
+      "type": "biginteger"
+    },
+    "perfil": {
+      "type": "text"
+    },
+    "empresa": {
+      "model": "company",
+      "via": "pessoas"
+    }
+  }
+}
