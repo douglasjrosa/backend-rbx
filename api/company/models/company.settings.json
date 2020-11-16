@@ -14,9 +14,6 @@
       "required": true,
       "unique": true
     },
-    "descricao": {
-      "type": "text"
-    },
     "rua": {
       "type": "string"
     },
@@ -58,8 +55,23 @@
       "via": "empresa"
     },
     "pessoas": {
+      "collection": "people",
+      "via": "empresa"
+    },
+    "razao": {
+      "type": "string"
+    },
+    "tarefas": {
       "via": "empresa",
-      "collection": "people"
+      "collection": "tarefas"
+    },
+    "logs_de_atividades": {
+      "via": "empresa",
+      "collection": "logs-de-atividades"
+    },
+    "notas": {
+      "via": "empresa",
+      "collection": "notas"
     }
   }
 }

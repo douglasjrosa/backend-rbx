@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/almoxarifados",
+      "handler": "almoxarifado.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/almoxarifados/count",
+      "handler": "almoxarifado.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/almoxarifados/:id",
+      "handler": "almoxarifado.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/almoxarifados",
+      "handler": "almoxarifado.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/almoxarifados/:id",
+      "handler": "almoxarifado.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/almoxarifados/:id",
+      "handler": "almoxarifado.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

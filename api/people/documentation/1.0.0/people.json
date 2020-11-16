@@ -550,9 +550,6 @@
               "nome": {
                 "type": "string"
               },
-              "descricao": {
-                "type": "string"
-              },
               "rua": {
                 "type": "string"
               },
@@ -601,11 +598,75 @@
                   "type": "string"
                 }
               },
+              "razao": {
+                "type": "string"
+              },
+              "tarefas": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "logs_de_atividades": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "notas": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },
               "updated_by": {
                 "type": "string"
+              }
+            }
+          },
+          "logs_de_atividades": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "timestamp": {
+                  "type": "datetime"
+                },
+                "atividade": {
+                  "type": "string"
+                },
+                "empresa": {
+                  "type": "string"
+                },
+                "negocio": {
+                  "type": "string"
+                },
+                "pessoa": {
+                  "type": "string"
+                },
+                "nota": {
+                  "type": "string"
+                },
+                "tarefa": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -721,6 +782,12 @@
           },
           "empresa": {
             "type": "string"
+          },
+          "logs_de_atividades": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"

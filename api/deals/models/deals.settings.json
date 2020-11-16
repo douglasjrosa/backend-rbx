@@ -27,15 +27,50 @@
     "probabilidade": {
       "type": "enumeration",
       "enum": [
-        "Lead",
-        "Curioso",
-        "Interessado",
-        "Necessitado"
+        "lead",
+        "curioso",
+        "interessado",
+        "necessitado"
       ]
     },
     "empresa": {
       "via": "negocios",
       "model": "company"
+    },
+    "etapa": {
+      "type": "enumeration",
+      "enum": [
+        "proposta",
+        "followup",
+        "negociacao",
+        "oficializacao",
+        "producao",
+        "expedicao",
+        "envio",
+        "posvenda"
+      ],
+      "default": "proposta"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "perdido",
+        "andamento",
+        "ganho"
+      ],
+      "default": "andamento"
+    },
+    "tarefas": {
+      "via": "negocio",
+      "collection": "tarefas"
+    },
+    "logs_de_atividades": {
+      "via": "negocio",
+      "collection": "logs-de-atividades"
+    },
+    "notas": {
+      "via": "negocio",
+      "collection": "notas"
     }
   }
 }

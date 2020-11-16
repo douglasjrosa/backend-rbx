@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/logs-de-atividades",
+      "handler": "logs-de-atividades.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/logs-de-atividades/count",
+      "handler": "logs-de-atividades.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/logs-de-atividades/:id",
+      "handler": "logs-de-atividades.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/logs-de-atividades",
+      "handler": "logs-de-atividades.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/logs-de-atividades/:id",
+      "handler": "logs-de-atividades.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/logs-de-atividades/:id",
+      "handler": "logs-de-atividades.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

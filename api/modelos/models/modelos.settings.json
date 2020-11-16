@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modelos",
+  "info": {
+    "name": "modelos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "pecas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partes.parte"
+    }
+  }
+}

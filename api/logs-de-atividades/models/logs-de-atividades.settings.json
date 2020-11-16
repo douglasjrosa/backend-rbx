@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "logs_de_atividades",
+  "info": {
+    "name": "Logs de atividades"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "logs_de_atividades"
+    },
+    "timestamp": {
+      "type": "datetime"
+    },
+    "atividade": {
+      "type": "string"
+    },
+    "empresa": {
+      "model": "company",
+      "via": "logs_de_atividades"
+    },
+    "negocio": {
+      "model": "deals",
+      "via": "logs_de_atividades"
+    },
+    "pessoa": {
+      "model": "people",
+      "via": "logs_de_atividades"
+    },
+    "nota": {
+      "model": "notas",
+      "via": "logs_de_atividades"
+    },
+    "tarefa": {
+      "model": "tarefas",
+      "via": "logs_de_atividades"
+    }
+  }
+}

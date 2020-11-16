@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "almoxarifados",
+  "info": {
+    "name": "Almoxarifado"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "largura": {
+      "type": "float"
+    },
+    "espessura": {
+      "type": "float"
+    },
+    "custo": {
+      "type": "decimal"
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "unidade",
+        "milheiro",
+        "metroCubico"
+      ]
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "nome"
+    }
+  }
+}

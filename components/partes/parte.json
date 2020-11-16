@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_meta_partes",
+  "info": {
+    "name": "pecas",
+    "icon": "bookmark"
+  },
+  "options": {},
+  "attributes": {
+    "peca": {
+      "type": "component",
+      "repeatable": true,
+      "component": "almoxarifado.pe"
+    },
+    "parametro": {
+      "type": "component",
+      "repeatable": true,
+      "component": "info.parametro"
+    },
+    "nome": {
+      "type": "string"
+    }
+  }
+}

@@ -526,9 +526,6 @@
           "nome": {
             "type": "string"
           },
-          "descricao": {
-            "type": "string"
-          },
           "rua": {
             "type": "string"
           },
@@ -593,6 +590,30 @@
                 "empresa": {
                   "type": "string"
                 },
+                "etapa": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "tarefas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "logs_de_atividades": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "notas": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -630,6 +651,135 @@
                 },
                 "empresa": {
                   "type": "string"
+                },
+                "logs_de_atividades": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "razao": {
+            "type": "string"
+          },
+          "tarefas": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "titulo": {
+                  "type": "string"
+                },
+                "data": {
+                  "type": "datetime"
+                },
+                "finalizada": {
+                  "type": "boolean"
+                },
+                "atrasada": {
+                  "type": "boolean"
+                },
+                "empresa": {
+                  "type": "string"
+                },
+                "negocio": {
+                  "type": "string"
+                },
+                "logs_de_atividades": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "logs_de_atividades": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "timestamp": {
+                  "type": "datetime"
+                },
+                "atividade": {
+                  "type": "string"
+                },
+                "empresa": {
+                  "type": "string"
+                },
+                "negocio": {
+                  "type": "string"
+                },
+                "pessoa": {
+                  "type": "string"
+                },
+                "nota": {
+                  "type": "string"
+                },
+                "tarefa": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "notas": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "conteudo": {
+                  "type": "string"
+                },
+                "empresa": {
+                  "type": "string"
+                },
+                "negocio": {
+                  "type": "string"
+                },
+                "logs_de_atividades": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "created_by": {
                   "type": "string"
@@ -738,9 +888,6 @@
           "nome": {
             "type": "string"
           },
-          "descricao": {
-            "type": "string"
-          },
           "rua": {
             "type": "string"
           },
@@ -784,6 +931,27 @@
             }
           },
           "pessoas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "razao": {
+            "type": "string"
+          },
+          "tarefas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "logs_de_atividades": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notas": {
             "type": "array",
             "items": {
               "type": "string"

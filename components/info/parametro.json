@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_info_parametros",
+  "info": {
+    "name": "Parâmetro",
+    "icon": "info-circle"
+  },
+  "options": {},
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "valor": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tarefas",
+  "info": {
+    "name": "Tarefas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "data": {
+      "type": "datetime"
+    },
+    "finalizada": {
+      "type": "boolean",
+      "default": false
+    },
+    "atrasada": {
+      "type": "boolean",
+      "default": false
+    },
+    "empresa": {
+      "model": "company",
+      "via": "tarefas"
+    },
+    "negocio": {
+      "model": "deals",
+      "via": "tarefas"
+    },
+    "logs_de_atividades": {
+      "via": "tarefa",
+      "collection": "logs-de-atividades"
+    }
+  }
+}

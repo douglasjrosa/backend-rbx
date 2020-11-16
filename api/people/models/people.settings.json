@@ -26,8 +26,12 @@
       "type": "text"
     },
     "empresa": {
-      "model": "company",
-      "via": "pessoas"
+      "via": "pessoas",
+      "model": "company"
+    },
+    "logs_de_atividades": {
+      "via": "pessoa",
+      "collection": "logs-de-atividades"
     }
   }
 }

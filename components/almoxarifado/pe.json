@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_base_pes",
+  "info": {
+    "name": "materiaPrima",
+    "icon": "puzzle-piece"
+  },
+  "options": {},
+  "attributes": {
+    "materiaPrima": {
+      "model": "almoxarifado"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "comprimento": {
+      "type": "string"
+    },
+    "largura": {
+      "type": "string"
+    },
+    "quantidade": {
+      "type": "string"
+    },
+    "custoMP": {
+      "type": "string"
+    },
+    "custoMO": {
+      "type": "string"
+    }
+  }
+}

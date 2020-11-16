@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notas",
+  "info": {
+    "name": "Notas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "conteudo": {
+      "type": "richtext"
+    },
+    "empresa": {
+      "model": "company",
+      "via": "notas"
+    },
+    "negocio": {
+      "model": "deals",
+      "via": "notas"
+    },
+    "logs_de_atividades": {
+      "via": "nota",
+      "collection": "logs-de-atividades"
+    }
+  }
+}
